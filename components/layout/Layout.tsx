@@ -11,7 +11,11 @@ export default function Layout({ children }: LayoutProps) {
     <div className="min-h-screen bg-slate-900 relative text-white">
       <Particles />
       <Header />
-      <main className="relative z-10">{children}</main>
+      <main className="relative z-10 pointer-events-none">
+        <div className="pointer-events-auto">
+          {children}
+        </div>
+      </main>
     </div>
   )
 }

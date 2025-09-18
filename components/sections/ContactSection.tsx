@@ -2,8 +2,12 @@
 
 import type React from "react"
 import { useState } from "react"
+import { useScrollAnimation } from "@/hooks/useScrollAnimation"
+import ScrollAnimatedCard from "@/components/ui/ScrollAnimatedCard"
 
 export default function ContactSection() {
+  const { visibleItems, containerRef } = useScrollAnimation()
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,15 +17,34 @@ export default function ContactSection() {
 
   const sendToWhatsApp = (e: React.FormEvent) => {
     e.preventDefault()
+    
+    // Validar campos requeridos
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      alert('Por favor completa todos los campos requeridos')
+      return
+    }
 
     const phoneNumber = "5493413967662" // Replace with actual WhatsApp number
-    const message = `Hola! Mi nombre es ${formData.name}${formData.company ? ` de ${formData.company}` : ""}. 
     
+    // Formato correcto para WhatsApp
+    const message = `Hola! Mi nombre es ${formData.name}${formData.company ? ` de ${formData.company}` : ""}.
+
 Email: ${formData.email}
 
 Mensaje: ${formData.message}`
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    // Detectar si es móvil o desktop y usar la mejor opción
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    
+    let whatsappUrl
+    if (isMobile) {
+      // En móvil, usar wa.me (abre la app)
+      whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    } else {
+      // En desktop, usar WhatsApp Web (funciona mejor)
+      whatsappUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`
+    }
+    
     window.open(whatsappUrl, "_blank")
   }
 
@@ -33,38 +56,58 @@ Mensaje: ${formData.message}`
   }
 
   return (
-    <div className="py-12 sm:py-20 px-4">
+    <div className="py-12 sm:py-20 px-4" ref={containerRef}>
       <div className="container mx-auto max-w-4xl">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center text-balance">
-          Contáctanos
-        </h1>
+        <ScrollAnimatedCard
+          index={0}
+          isVisible={visibleItems.has(0)}
+          delay={0}
+          animation="fadeIn"
+        >
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center text-balance">
+            Contáctanos
+          </h1>
+        </ScrollAnimatedCard>
 
         <div className="grid gap-8 lg:gap-12 lg:grid-cols-2">
-          <div className="order-2 lg:order-1">
-            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Información de Contacto</h2>
+          <ScrollAnimatedCard
+            index={1}
+            isVisible={visibleItems.has(1)}
+            delay={150}
+            animation="slideLeft"
+          >
+            <div className="order-2 lg:order-1">
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Información de Contacto</h2>
             <div className="space-y-4 sm:space-y-6">
-              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700">
+              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition-colors">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Ubicación</h3>
                 <p className="text-gray-300 text-sm sm:text-base">Rosario, Santa Fe, Argentina</p>
               </div>
-              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700">
+              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition-colors">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">WhatsApp</h3>
                 <p className="text-gray-300 text-sm sm:text-base">+54 9 341 3967662</p>
               </div>
-              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700">
+              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition-colors">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Email</h3>
                 <p className="text-gray-300 text-sm sm:text-base">info@itsolutions.com.ar</p>
               </div>
-              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700">
+              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400 transition-colors">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Horarios de Atención</h3>
                 <p className="text-gray-300 text-sm sm:text-base">Lunes a Viernes: 8:00 - 18:00</p>
                 <p className="text-gray-300 text-sm sm:text-base">Sábados: 9:00 - 13:00</p>
               </div>
             </div>
-          </div>
+            </div>
+          </ScrollAnimatedCard>
 
-          <div className="order-1 lg:order-2">
-            <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Envíanos un Mensaje por WhatsApp</h2>
+          <ScrollAnimatedCard
+            index={2}
+            isVisible={visibleItems.has(2)}
+            delay={300}
+            animation="slideRight"
+          >
+            <div className="order-1 lg:order-2">
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Envíanos un Mensaje por WhatsApp</h2>
             <form onSubmit={sendToWhatsApp} className="space-y-4 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -135,7 +178,8 @@ Mensaje: ${formData.message}`
                 Enviar por WhatsApp
               </button>
             </form>
-          </div>
+            </div>
+          </ScrollAnimatedCard>
         </div>
       </div>
     </div>

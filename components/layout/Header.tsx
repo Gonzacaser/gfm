@@ -15,8 +15,19 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <Title title="GFM" className="text-xl sm:text-2xl font-bold text-white" />
+            <div className="flex items-center space-x-3">
+              {/* Logo */}
+              <div className="flex-shrink-0">
+                <img 
+                  src="/logoGFM.webp" 
+                  alt="GFM Logo" 
+                  className="h-8 w-8 sm:h-10 sm:w-10 object-cover rounded-full border-2 border-slate-600 hover:border-blue-400 transition-colors"
+                />
+              </div>
+              {/* Texto de la empresa */}
+              <div className="flex-shrink-0">
+                <Title title="GFM" className="text-xl sm:text-2xl font-bold text-white" />
+              </div>
             </div>
           </div>
 
