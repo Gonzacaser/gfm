@@ -3,6 +3,7 @@
 import { Title } from "../ui/title/Title";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 import ScrollAnimatedCard from "@/components/ui/ScrollAnimatedCard"
+import { MdVideocam, MdCable, MdBuild, MdSecurity, MdComputer, MdCode, MdSupportAgent } from "react-icons/md"
 
 export default function ServicesSection() {
   const { visibleItems, containerRef } = useScrollAnimation()
@@ -29,37 +30,54 @@ export default function ServicesSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
             </div>
             
-            <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end min-h-[200px]">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 text-white group-hover:text-blue-300 transition-colors">Soporte Técnico</h2>
-                <p className="text-gray-300 mb-4 sm:mb-6 text-pretty text-sm sm:text-base">
+            <div className="relative z-10 p-6 sm:p-8 h-full flex flex-col min-h-[320px]">
+              {/* Header con icono */}
+              <div className="flex items-center mb-4 sm:mb-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                  <MdSupportAgent className="w-7 h-7 sm:w-8 sm:h-8 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                  Soporte Técnico
+                </h2>
+              </div>
+              
+              {/* Descripción principal */}
+              <p className="text-gray-200 mb-4 sm:mb-6 text-pretty text-base sm:text-lg leading-relaxed">
                 Brindamos asistencia presencial y remota para pymes y grandes empresas, garantizando la continuidad
-                operativa de sus sistemas informáticos. Nuestro servicio incluye:
+                operativa de sus sistemas informáticos.
               </p>
-            <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
-              <li className="flex items-start">
-                <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
-                <span>Mantenimiento preventivo y correctivo de equipos, servidores y redes</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
-                <span>Resolución rápida de incidencias para minimizar tiempos de inactividad</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
-                <span>
-                  Gestión integral de software y hardware, asegurando un entorno de trabajo estable y eficiente
-                </span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
-                <span>Proyectos de infraestructura tecnológica, adaptados a las necesidades de cada organización</span>
-              </li>
-            </ul>
-            <p className="text-gray-300 mt-4 sm:mt-6 text-pretty text-sm sm:text-base">
-              Con foco en la calidad del servicio y una atención personalizada, ofrecemos cobertura en Rosario y
-              alrededores, convirtiéndonos en un socio estratégico para el crecimiento y seguridad tecnológica de su
-              empresa.
-              </p>
+              
+              {/* Lista de servicios */}
+              <div className="flex-1">
+                <h3 className="text-lg sm:text-xl font-semibold text-blue-300 mb-3 sm:mb-4">Nuestro servicio incluye:</h3>
+                <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
+                    <span>Mantenimiento preventivo y correctivo de equipos, servidores y redes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
+                    <span>Resolución rápida de incidencias para minimizar tiempos de inactividad</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
+                    <span>Gestión integral de software y hardware, asegurando un entorno de trabajo estable y eficiente</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-blue-400 mr-3 flex-shrink-0">•</span>
+                    <span>Proyectos de infraestructura tecnológica, adaptados a las necesidades de cada organización</span>
+                  </li>
+                </ul>
+              </div>
+              
+              {/* Footer destacado */}
+              <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-blue-400/30">
+                <p className="text-blue-200 font-medium text-sm sm:text-base text-pretty">
+                  Con foco en la calidad del servicio y una atención personalizada, ofrecemos cobertura en Rosario y
+                  alrededores, convirtiéndonos en un socio estratégico para el crecimiento y seguridad tecnológica de su
+                  empresa.
+                </p>
+              </div>
             </div>
             </ScrollAnimatedCard>
         </section>
@@ -86,10 +104,16 @@ export default function ServicesSection() {
               </div>
               
               {/* Contenido superpuesto */}
-              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end min-h-[200px]">
-                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white group-hover:text-blue-300 transition-colors">
-                  Sistemas de Videovigilancia
-                </h3>
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Videovigilancia */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdVideocam className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Sistemas de Videovigilancia
+                  </h3>
+                </div>
                 <p className="text-gray-200 text-pretty text-sm sm:text-base">
                   Implementación de soluciones de CCTV analógico e IP, integración con redes y dispositivos móviles,
                   instalación de cableado estructurado y servicios de alarma.
@@ -115,10 +139,16 @@ export default function ServicesSection() {
               </div>
               
               {/* Contenido superpuesto */}
-              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end min-h-[200px]">
-                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white group-hover:text-blue-300 transition-colors">
-                  Cableados
-                </h3>
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Cableados */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdCable className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Cableados
+                  </h3>
+                </div>
                 <p className="text-gray-200 text-pretty text-sm sm:text-base">
                   Instalación de cableado estructurado para telefonía, redes de datos y fibra óptica, asegurando
                   rendimiento y escalabilidad.
@@ -144,10 +174,16 @@ export default function ServicesSection() {
               </div>
               
               {/* Contenido superpuesto */}
-              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col justify-end min-h-[200px]">
-                <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white group-hover:text-blue-300 transition-colors">
-                  Mantenimiento Integral
-                </h3>
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Mantenimiento */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdBuild className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Mantenimiento Integral
+                  </h3>
+                </div>
                 <p className="text-gray-200 text-pretty text-sm sm:text-base">
                   Mantenimiento y reparación de equipos informáticos y servidores, resolución de incidencias, instalación
                   de software y gestión de proyectos de infraestructura tecnológica.
@@ -162,7 +198,13 @@ export default function ServicesSection() {
               animation="slideLeft"
               className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
             >
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Sistemas de Control de Acceso</h3>
+              <div className="flex items-center mb-3 sm:mb-4">
+                {/* Icono de Control de Acceso */}
+                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                  <MdSecurity className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Sistemas de Control de Acceso</h3>
+              </div>
               <p className="text-gray-300 text-pretty text-sm sm:text-base">
                 Diseño, asesoramiento e implementación de soluciones de seguridad para la gestión y control de accesos
                 en infraestructuras corporativas.
@@ -176,7 +218,13 @@ export default function ServicesSection() {
               animation="slideUp"
               className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
             >
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Venta de Hardware</h3>
+              <div className="flex items-center mb-3 sm:mb-4">
+                {/* Icono de Venta de Hardware */}
+                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                  <MdComputer className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Venta de Hardware</h3>
+              </div>
               <p className="text-gray-300 text-pretty text-sm sm:text-base">
                 Comercialización de equipos, componentes y dispositivos tecnológicos adaptados a las necesidades de cada
                 proyecto.
@@ -190,7 +238,13 @@ export default function ServicesSection() {
               animation="slideRight"
               className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
             >
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Distribución de Software y Licencias</h3>
+              <div className="flex items-center mb-3 sm:mb-4">
+                {/* Icono de Software y Licencias */}
+                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                  <MdCode className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
+                </div>
+                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Distribución de Software y Licencias</h3>
+              </div>
               <p className="text-gray-300 text-pretty text-sm sm:text-base">
                 Suministro e implementación de soluciones de software empresariales y de respaldo, con soporte técnico
                 especializado.

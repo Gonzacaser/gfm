@@ -15,7 +15,7 @@ export default function HeroSection() {
           delay={0}
           animation="fadeIn"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 sm:mb-8 text-balance leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 sm:mb-10 text-balance leading-tight">
             Soluciones IT confiables, robustas y seguras
           </h1>
         </ScrollAnimatedCard>
@@ -26,7 +26,7 @@ export default function HeroSection() {
           delay={300}
           animation="fadeIn"
         >
-          <p className="text-lg text-bold sm:text-xl text-gray-300 mb-8 sm:mb-12 text-pretty max-w-3xl mx-auto">
+          <p className="text-lg text-bold sm:text-xl text-gray-300 mb-8 sm:mb-10 text-pretty max-w-3xl mx-auto">
             Proveemos soluciones tecnológicas integrales para PYMES, garantizando seguridad, eficiencia y continuidad
             operativa.
           </p>
