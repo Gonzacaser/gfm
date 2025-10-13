@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Title } from "../ui/title/Title";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation"
 import ScrollAnimatedCard from "@/components/ui/ScrollAnimatedCard"
@@ -22,10 +23,14 @@ export default function ServicesSection() {
             animation="scaleUp"
             className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
           >
-            <div className="absolute inset-0">
-              <img 
-              src="/images/banner.jpeg" 
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-black">
+              <Image 
+                src="/images/banner.jpeg" 
+                alt="Soporte Técnico GFM"
+                fill
+                className="object-cover transition-transform duration-300 group-hover:scale-110"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
             </div>
@@ -94,11 +99,13 @@ export default function ServicesSection() {
               className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
             >
               {/* Imagen de fondo */}
-              <div className="absolute inset-0">
-                <img 
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
                   src="/images/videovigilancia.jpeg" 
                   alt="Sistemas de Videovigilancia"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
@@ -129,11 +136,13 @@ export default function ServicesSection() {
               className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
             >
               {/* Imagen de fondo */}
-              <div className="absolute inset-0">
-                <img 
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
                   src="/images/cableado2.jpeg" 
                   alt="Cableados"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
@@ -164,11 +173,13 @@ export default function ServicesSection() {
               className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
             >
               {/* Imagen de fondo */}
-              <div className="absolute inset-0">
-                <img 
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
                   src="/images/mantenimiento.jpeg" 
                   alt="Mantenimiento Integral"
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
