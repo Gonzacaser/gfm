@@ -10,14 +10,22 @@ export default function AboutSection() {
   return (
     <div ref={containerRef} className="py-12 sm:py-20 px-4">
       <div className="container mx-auto max-w-4xl">
-        <Title title="Sobre Nosotros" className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center text-balance" />
-
         <ScrollAnimatedCard
           index={0}
           isVisible={visibleItems.has(0)}
           delay={0}
           animation="fadeIn"
-          className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 mb-8 sm:mb-12 hover:border-blue-400 cursor-default select-none"
+          className="mb-12 sm:mb-16"
+        >
+          <Title title="Sobre Nosotros" className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-balance" />
+        </ScrollAnimatedCard>
+
+        <ScrollAnimatedCard
+          index={1}
+          isVisible={visibleItems.has(1)}
+          delay={150}
+          animation="scaleUp"
+          className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 mb-8 sm:mb-12 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
         >
           <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-400">Quiénes Somos</h2>
           <p className="text-gray-300 mb-4 sm:mb-6 text-pretty text-sm sm:text-base">
@@ -33,11 +41,11 @@ export default function AboutSection() {
 
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           <ScrollAnimatedCard
-            index={1}
-            isVisible={visibleItems.has(1)}
-            delay={0}
+            index={2}
+            isVisible={visibleItems.has(2)}
+            delay={300}
             animation="slideLeft"
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Nuestra Experiencia</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -47,11 +55,11 @@ export default function AboutSection() {
           </ScrollAnimatedCard>
           
           <ScrollAnimatedCard
-            index={2}
-            isVisible={visibleItems.has(2)}
-            delay={150}
+            index={3}
+            isVisible={visibleItems.has(3)}
+            delay={450}
             animation="slideRight"
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Nuestro Compromiso</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -60,6 +68,18 @@ export default function AboutSection() {
             </p>
           </ScrollAnimatedCard>
         </div>
+
+        <ScrollAnimatedCard
+          index={4}
+          isVisible={visibleItems.has(4)}
+          delay={600}
+          animation="fadeIn"
+          className="text-center mt-8 sm:mt-12"
+        >
+          <p className="text-lg sm:text-2xl text-gray-200 font-light italic">
+            Más de 5 años brindando soluciones IT de calidad y confianza
+          </p>
+        </ScrollAnimatedCard>
       </div>
     </div>
   )

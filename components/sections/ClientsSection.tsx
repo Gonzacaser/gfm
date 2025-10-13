@@ -109,7 +109,7 @@ export default function ClientsSection() {
               bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900
               hover:from-blue-600 hover:via-blue-500 hover:to-blue-600
               border border-blue-500/30 hover:border-blue-400
-              rounded-lg hover:rounded-xl transition-all duration-400 ease-out
+              rounded-lg hover:rounded-xl transition-all duration-100 ease-out
               hover:scale-105 hover:shadow-xl hover:shadow-blue-500/30
               transform hover:-translate-y-0.5 active:scale-[0.98]
               before:absolute before:inset-0 before:bg-gradient-to-r 

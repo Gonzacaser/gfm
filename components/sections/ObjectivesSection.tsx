@@ -14,7 +14,7 @@ export default function ObjectivesSection() {
             index={0}
             isVisible={visibleItems.has(0)}
             delay={0}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-blue-400">Misión</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -27,7 +27,7 @@ export default function ObjectivesSection() {
             index={1}
             isVisible={visibleItems.has(1)}
             delay={150}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-4 text-blue-400">Visión</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -42,7 +42,7 @@ export default function ObjectivesSection() {
             index={2}
             isVisible={visibleItems.has(2)}
             delay={0}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-4 text-blue-400">Maximizar la Continuidad del Negocio</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -55,7 +55,7 @@ export default function ObjectivesSection() {
             index={3}
             isVisible={visibleItems.has(3)}
             delay={150}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-4 text-blue-400">Optimizar la Inversión Tecnológica</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -68,7 +68,7 @@ export default function ObjectivesSection() {
             index={4}
             isVisible={visibleItems.has(4)}
             delay={300}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-4 text-blue-400">Impulsar la Eficiencia Operativa</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -81,7 +81,7 @@ export default function ObjectivesSection() {
             index={5}
             isVisible={visibleItems.has(5)}
             delay={450}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400 cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-4 text-blue-400">Construir Relaciones de Largo Plazo</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
