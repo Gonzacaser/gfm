@@ -21,7 +21,7 @@ export default function ServicesSection() {
             isVisible={visibleItems.has(0)}
             delay={0}
             animation="scaleUp"
-            className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
+            className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-50 ease-out cursor-default select-none will-change-transform"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-black">
               <Image 
@@ -96,7 +96,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(1)}
               delay={200}
               animation="slideLeft"
-              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-50 ease-out cursor-default select-none will-change-transform"
             >
               {/* Imagen de fondo */}
               <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
@@ -133,7 +133,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(2)}
               delay={0}
               animation="slideUp"
-              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-50 ease-out cursor-default select-none will-change-transform"
             >
               {/* Imagen de fondo */}
               <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
@@ -170,7 +170,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(3)}
               delay={200}
               animation="slideRight"
-              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transition-[border-color,box-shadow] duration-100 ease-out cursor-default select-none"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-75 ease-out cursor-default select-none will-change-transform"
             >
               {/* Imagen de fondo */}
               <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
@@ -207,7 +207,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(4)}
               delay={300}
               animation="slideLeft"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
             >
               <div className="flex items-center mb-3 sm:mb-4">
                 {/* Icono de Control de Acceso */}
@@ -227,7 +227,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(5)}
               delay={150}
               animation="slideUp"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
             >
               <div className="flex items-center mb-3 sm:mb-4">
                 {/* Icono de Venta de Hardware */}
@@ -247,7 +247,7 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(6)}
               delay={300}
               animation="slideRight"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
             >
               <div className="flex items-center mb-3 sm:mb-4">
                 {/* Icono de Software y Licencias */}

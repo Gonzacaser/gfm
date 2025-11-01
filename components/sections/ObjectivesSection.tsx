@@ -15,13 +15,13 @@ export default function ObjectivesSection() {
             index={0}
             isVisible={visibleItems.has(0)}
             delay={0}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdFlag className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdFlag className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Misión</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-blue-400">Misión</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Proveer soluciones IT integrales y accesibles para PYMES, permitiéndoles operar con seguridad, eficiencia
@@ -33,13 +33,13 @@ export default function ObjectivesSection() {
             index={1}
             isVisible={visibleItems.has(1)}
             delay={150}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdVisibility className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdVisibility className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Visión</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-blue-400">Visión</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Consolidarnos como el partner tecnológico de referencia para las pequeñas y medianas empresas de Rosario
@@ -51,13 +51,13 @@ export default function ObjectivesSection() {
             index={2}
             isVisible={visibleItems.has(2)}
             delay={0}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdShield className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdShield className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Maximizar la Continuidad del Negocio</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-blue-400">Maximizar la Continuidad del Negocio</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Garantizar la máxima disponibilidad y seguridad de sus sistemas, reduciendo los tiempos de inactividad y
@@ -69,13 +69,13 @@ export default function ObjectivesSection() {
             index={3}
             isVisible={visibleItems.has(3)}
             delay={150}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdTrendingUp className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdTrendingUp className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Optimizar la Inversión Tecnológica</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-blue-400">Optimizar la Inversión Tecnológica</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Proveer soluciones escalables y predecibles que se adapten a su presupuesto, transformando el gasto IT en
@@ -87,13 +87,13 @@ export default function ObjectivesSection() {
             index={4}
             isVisible={visibleItems.has(4)}
             delay={300}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdSpeed className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdSpeed className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Impulsar la Eficiencia Operativa</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-blue-400">Impulsar la Eficiencia Operativa</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Automatizar procesos e implementar herramientas que incrementen la productividad de su equipo,
@@ -105,13 +105,13 @@ export default function ObjectivesSection() {
             index={5}
             isVisible={visibleItems.has(5)}
             delay={450}
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none flex flex-col group"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center group-hover:bg-blue-400/30 transition-colors">
-                <MdHandshake className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 mr-4 flex-shrink-0 bg-blue-400/20 rounded-xl flex items-center justify-center">
+                <MdHandshake className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-blue-400 group-hover:text-blue-300 transition-colors">Construir Relaciones de Largo Plazo</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-blue-400">Construir Relaciones de Largo Plazo</h3>
             </div>
             <p className="text-gray-300 text-pretty text-sm sm:text-base flex-grow">
               Convertirnos en socios estratégicos, comprendiendo sus desafíos únicos para ofrecer asesoría proactiva y
