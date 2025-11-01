@@ -207,19 +207,36 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(4)}
               delay={300}
               animation="slideLeft"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-75 ease-out cursor-default select-none will-change-transform"
             >
-              <div className="flex items-center mb-3 sm:mb-4">
-                {/* Icono de Control de Acceso */}
-                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
-                  <MdSecurity className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Sistemas de Control de Acceso</h3>
+              {/* Imagen de fondo */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
+                  src="/images/controlAcceso.png" 
+                  alt="Sistemas de Control de Acceso"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
-              <p className="text-gray-300 text-pretty text-sm sm:text-base">
-                Diseño, asesoramiento e implementación de soluciones de seguridad para la gestión y control de accesos
-                en infraestructuras corporativas.
-              </p>
+              
+              {/* Contenido superpuesto */}
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Control de Acceso */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdSecurity className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Sistemas de Control de Acceso
+                  </h3>
+                </div>
+                <p className="text-gray-200 text-pretty text-sm sm:text-base">
+                  Diseño, asesoramiento e implementación de soluciones de seguridad para la gestión y control de accesos
+                  en infraestructuras corporativas.
+                </p>
+              </div>
             </ScrollAnimatedCard>
 
             <ScrollAnimatedCard
@@ -227,19 +244,36 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(5)}
               delay={150}
               animation="slideUp"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-75 ease-out cursor-default select-none will-change-transform"
             >
-              <div className="flex items-center mb-3 sm:mb-4">
-                {/* Icono de Venta de Hardware */}
-                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
-                  <MdComputer className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Venta de Hardware</h3>
+              {/* Imagen de fondo */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
+                  src="/images/hardware.png" 
+                  alt="Venta de Hardware"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
-              <p className="text-gray-300 text-pretty text-sm sm:text-base">
-                Comercialización de equipos, componentes y dispositivos tecnológicos adaptados a las necesidades de cada
-                proyecto.
-              </p>
+              
+              {/* Contenido superpuesto */}
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Venta de Hardware */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdComputer className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Venta de Hardware
+                  </h3>
+                </div>
+                <p className="text-gray-200 text-pretty text-sm sm:text-base">
+                  Comercialización de equipos, componentes y dispositivos tecnológicos adaptados a las necesidades de cada
+                  proyecto.
+                </p>
+              </div>
             </ScrollAnimatedCard>
 
             <ScrollAnimatedCard
@@ -247,19 +281,36 @@ export default function ServicesSection() {
               isVisible={visibleItems.has(6)}
               delay={300}
               animation="slideRight"
-              className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transform-gpu transition-[border-color,box-shadow,background-color] duration-75 ease-out cursor-default select-none will-change-transform"
+              className="group relative overflow-hidden rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 transform-gpu transition-[border-color,box-shadow] duration-75 ease-out cursor-default select-none will-change-transform"
             >
-              <div className="flex items-center mb-3 sm:mb-4">
-                {/* Icono de Software y Licencias */}
-                <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
-                  <MdCode className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 opacity-90 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <h3 className="text-lg sm:text-xl font-bold text-blue-400">Distribución de Software y Licencias</h3>
+              {/* Imagen de fondo */}
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800 to-slate-900">
+                <Image 
+                  src="/images/software.png" 
+                  alt="Distribución de Software y Licencias"
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
               </div>
-              <p className="text-gray-300 text-pretty text-sm sm:text-base">
-                Suministro e implementación de soluciones de software empresariales y de respaldo, con soporte técnico
-                especializado.
-              </p>
+              
+              {/* Contenido superpuesto */}
+              <div className="relative z-10 p-4 sm:p-6 h-full flex flex-col min-h-[200px]">
+                <div className="flex items-center mb-3 sm:mb-4">
+                  {/* Icono de Software y Licencias */}
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 mr-3 flex-shrink-0 bg-blue-400/20 rounded-lg flex items-center justify-center group-hover:bg-blue-300/30 transition-colors">
+                    <MdCode className="w-5 h-5 sm:w-6 sm:h-6 text-white opacity-90 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-blue-300 transition-colors">
+                    Distribución de Software y Licencias
+                  </h3>
+                </div>
+                <p className="text-gray-200 text-pretty text-sm sm:text-base">
+                  Suministro e implementación de soluciones de software empresariales y de respaldo, con soporte técnico
+                  especializado.
+                </p>
+              </div>
             </ScrollAnimatedCard>
           </div>
         </section>
