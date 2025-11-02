@@ -41,7 +41,7 @@ export default function ClientsSection() {
           delay={300}
           animation="slideUp"
         >
-          <div className="grid grid-cols-3 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-5 mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-5 mb-12 sm:mb-16">
 
           <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 text-center h-48 sm:h-auto sm:aspect-square flex flex-col items-center justify-center">
             <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4">

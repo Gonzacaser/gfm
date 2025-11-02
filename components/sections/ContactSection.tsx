@@ -89,12 +89,11 @@ Mensaje: ${formData.message}`
               </div>
               <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Email</h3>
-                <p className="text-gray-300 text-sm sm:text-base">info@itsolutions.com.ar</p>
+                <p className="text-gray-300 text-sm sm:text-base">Proximamente..</p>
               </div>
               <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Horarios de Atención</h3>
-                <p className="text-gray-300 text-sm sm:text-base">Lunes a Viernes: 8:00 - 18:00</p>
-                <p className="text-gray-300 text-sm sm:text-base">Sábados: 9:00 - 13:00</p>
+                <p className="text-gray-300 text-sm sm:text-base">Lunes a Domingo las 24hs</p>
               </div>
             </div>
             </div>
