@@ -25,10 +25,12 @@ export default function ClientsSection() {
           delay={150}
           animation="fadeIn"
         >
-          <div className="text-center mb-8 sm:mb-12">
-            <p className="text-lg sm:text-xl text-gray-300 text-pretty">
-              Trabajamos con empresas de diversos sectores, brindando soluciones tecnológicas adaptadas a sus necesidades
-              específicas.
+          <div className="text-center mb-8 sm:mb-12 max-w-4xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-300 text-pretty mb-4">
+              Trabajamos con empresas de diversos sectores, brindando soluciones tecnológicas adaptadas a sus necesidades específicas.
+            </p>
+            <p className="text-base sm:text-xl text-blue-300 font-medium italic">
+              Ellos ya confiaron en nosotros: 
             </p>
           </div>
         </ScrollAnimatedCard>
@@ -199,7 +201,7 @@ export default function ClientsSection() {
         >
           <div className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 text-center">
           <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-blue-400">
-            ¿Quieres ser nuestro próximo cliente?
+            ¿Queres ser nuestro próximo cliente?
           </h2>
           <p className="text-gray-300 mb-4 sm:mb-6 text-pretty text-sm sm:text-base">
             Únete a las empresas que ya confían en nosotros para sus soluciones tecnológicas.

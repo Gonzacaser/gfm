@@ -81,7 +81,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-800/95 backdrop-blur rounded-lg mt-2">
+            <div className="pt-2 pb-2 space-y-2 px-3 max-w-xs mx-auto bg-slate-800/95 backdrop-blur rounded-xl mt-2 text-center">
               <Link href="/" className="text-white hover:text-blue-400 block px-3 py-2 text-base font-medium">
                 Inicio
               </Link>
