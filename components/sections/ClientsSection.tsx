@@ -37,8 +37,8 @@ export default function ClientsSection() {
 
         <ScrollAnimatedCard
           index={2}
-          isVisible={visibleItems.has(2)}
-          delay={300}
+          isVisible={visibleItems.has(1)}
+          delay={500}
           animation="slideUp"
         >
           <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-5 mb-12 sm:mb-16">
@@ -54,7 +54,7 @@ export default function ClientsSection() {
             <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4">
               <img src="/images/clients/atlas.png" alt="Centro Cultural Atlas" className="w-full h-full object-cover rounded-full" />
             </div>
-            <h3 className="text-sm sm:text-base font-semibold mb-2">Centro Cultural Atlas</h3>
+            <h3 className="text-base sm:text-sm font-semibold mb-2">Centro Cultural Atlas</h3>
           </div>
 
           <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 text-center h-48 sm:h-auto sm:aspect-square flex flex-col items-center justify-center">
@@ -68,7 +68,7 @@ export default function ClientsSection() {
             <div className="w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center mx-auto mb-3 sm:mb-4">
               <img src="/images/clients/deotromundo.png" alt="De Otro Mundo" className="w-full h-full object-cover rounded-full" />
             </div>
-            <h3 className="text-base sm:text-lg font-semibold mb-2">DeOtroMundo</h3>
+            <h3 className="text-base sm:text-lg font-semibold mb-2">De Otro Mundo</h3>
           </div>
 
           <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 text-center h-48 sm:h-auto sm:aspect-square flex flex-col items-center justify-center">
@@ -196,7 +196,7 @@ export default function ClientsSection() {
         <ScrollAnimatedCard
           index={3}
           isVisible={visibleItems.has(3)}
-          delay={450}
+          delay={350}
           animation="scaleUp"
         >
           <div className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 text-center">

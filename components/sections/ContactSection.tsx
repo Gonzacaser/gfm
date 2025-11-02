@@ -64,8 +64,8 @@ Mensaje: ${formData.message}`
           delay={0}
           animation="fadeIn"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center text-balance">
-            Contáctanos
+          <h1 className="italic text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-center text-balance">
+            Contactanos
           </h1>
         </ScrollAnimatedCard>
 

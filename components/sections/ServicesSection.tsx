@@ -25,7 +25,7 @@ export default function ServicesSection() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-black">
               <Image 
-                src="/images/banner.jpeg" 
+                src="/images/bannerF.png" 
                 alt="Soporte Técnico GFM"
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-110"

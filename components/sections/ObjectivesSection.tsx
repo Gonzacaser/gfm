@@ -86,7 +86,7 @@ export default function ObjectivesSection() {
           <ScrollAnimatedCard
             index={4}
             isVisible={visibleItems.has(4)}
-            delay={300}
+            delay={0}
             className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">
@@ -104,7 +104,7 @@ export default function ObjectivesSection() {
           <ScrollAnimatedCard
             index={5}
             isVisible={visibleItems.has(5)}
-            delay={450}
+            delay={150}
             className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-3xl border border-slate-700 cursor-default select-none flex flex-col group hover:bg-black/40 hover:shadow-lg hover:shadow-black/50 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform"
           >
             <div className="flex items-center mb-4">

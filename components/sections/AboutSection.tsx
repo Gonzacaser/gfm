@@ -25,7 +25,7 @@ export default function AboutSection() {
           isVisible={visibleItems.has(1)}
           delay={150}
           animation="scaleUp"
-          className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 mb-8 sm:mb-12 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+          className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 mb-8 sm:mb-12 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform cursor-default select-none"
         >
           <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-blue-400">Quiénes Somos</h2>
           <p className="text-gray-300 mb-4 sm:mb-6 text-pretty text-sm sm:text-base">
@@ -45,7 +45,7 @@ export default function AboutSection() {
             isVisible={visibleItems.has(2)}
             delay={300}
             animation="slideLeft"
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Nuestra Experiencia</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
@@ -59,7 +59,7 @@ export default function AboutSection() {
             isVisible={visibleItems.has(3)}
             delay={450}
             animation="slideRight"
-            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out cursor-default select-none"
+            className="bg-black/30 backdrop-blur-sm p-6 sm:p-8 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 hover:-translate-y-1 transform-gpu transition-transform duration-75 ease-out will-change-transform cursor-default select-none"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-blue-400">Nuestro Compromiso</h3>
             <p className="text-gray-300 text-pretty text-sm sm:text-base">
