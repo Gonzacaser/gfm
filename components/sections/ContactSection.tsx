@@ -88,6 +88,10 @@ Mensaje: ${formData.message}`
                 <p className="text-gray-300 text-sm sm:text-base">+54 9 341 3967662</p>
               </div>
               <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out">
+                <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Instagram</h3>
+                <p className="text-gray-300 text-sm sm:text-base">@soluciones.gfm</p>
+              </div>
+              <div className="bg-black/30 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-slate-700 hover:border-blue-400/80 hover:shadow-xl hover:shadow-blue-500/25 hover:bg-black/40 transition-[border-color,box-shadow,background-color] duration-100 ease-out">
                 <h3 className="text-base sm:text-lg font-semibold mb-2 text-blue-400">Email</h3>
                 <p className="text-gray-300 text-sm sm:text-base">Proximamente..</p>
               </div>
@@ -106,7 +110,7 @@ Mensaje: ${formData.message}`
             animation="slideRight"
           >
             <div className="order-1 lg:order-2">
-              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Envíanos un Mensaje por WhatsApp</h2>
+              <h2 className="text-xl sm:text-2xl font-bold mb-6 text-blue-400">Envianos un Mensaje por WhatsApp</h2>
             <form onSubmit={sendToWhatsApp} className="space-y-4 sm:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
